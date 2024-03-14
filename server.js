@@ -4,6 +4,10 @@ const axios = require('axios');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Adding defult browers
+app.set('view engine', 'ejs');
+
+
 // Middleware
 app.use(express.static('public'));
 
